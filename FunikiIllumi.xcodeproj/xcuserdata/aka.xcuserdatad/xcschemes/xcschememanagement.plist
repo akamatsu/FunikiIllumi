@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FunikiIllumi.xcscheme</key>
+		<key>FunikiIllumi WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>FunikiIllumi.xcscheme_^#shared#^_</key>
+		<key>FunikiIllumi.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -17,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>41F6BCE11AE7A80A005D60B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8C79FE041A7DBEB80091F040</key>
 		<dict>
 			<key>primary</key>

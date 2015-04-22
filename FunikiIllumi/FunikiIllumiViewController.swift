@@ -162,6 +162,20 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 	}
 	
 	// ---------------------------------------------------------------------
+	// MARK: - Watch
+	// ---------------------------------------------------------------------
+	
+	func buttonPushed(buttonTitle: String) {
+		for button:UIButton in variations {
+			let title = button.titleLabel!.text!
+			if title == buttonTitle {
+				variationSelected(button)
+			}
+		}
+	}
+
+	
+	// ---------------------------------------------------------------------
 	// MARK: - Light Variations
 	// ---------------------------------------------------------------------
 	

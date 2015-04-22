@@ -9,10 +9,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+	var viewController: FunikiIllumiViewController?
+	
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+		viewController = window?.rootViewController as? FunikiIllumiViewController
         return true
     }
 
@@ -39,5 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+	func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+		
+		if let userInfo = userInfo, buttonTitle = userInfo["buttonPushed"] as? String {
+			viewController?.buttonPushed(buttonTitle)
+			//reply(["fromApp":"OK"])
+		}
+	}
 }
 

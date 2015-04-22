@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FunikiIllumi_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Tou Mei" id="9LY-se-2FH">
+                            <connections>
+                                <action selector="toumeiPushed" destination="AgC-eL-Hgc" id="FX0-TT-aSq"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Yuru Yaka" id="xAH-9G-C8v">
+                            <connections>
+                                <action selector="yuruyakaPushed" destination="AgC-eL-Hgc" id="WkH-1C-xIi"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Bon Yari" id="uPl-nO-rkT">
+                            <connections>
+                                <action selector="bonyariPushed" destination="AgC-eL-Hgc" id="Pqy-gy-EQH"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Chika Chika" id="Mg5-U4-X4H">
+                            <connections>
+                                <action selector="chikachikaPushed" destination="AgC-eL-Hgc" id="QnW-Y6-zfC"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Dota Bata" id="K4z-y4-PbP">
+                            <connections>
+                                <action selector="dotabataPushed" destination="AgC-eL-Hgc" id="GbY-bl-yyW"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Toki Doki" id="9Ml-eF-CWz">
+                            <connections>
+                                <action selector="tokidokiPushed" destination="AgC-eL-Hgc" id="6ml-N0-6rq"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="bonyariButton" destination="uPl-nO-rkT" id="bqa-Lc-ox1"/>
+                        <outlet property="chikachikaButton" destination="Mg5-U4-X4H" id="to5-5D-yCU"/>
+                        <outlet property="dotabataButton" destination="K4z-y4-PbP" id="g5U-U5-tfT"/>
+                        <outlet property="tokidokiButton" destination="9Ml-eF-CWz" id="rM0-cN-s28"/>
+                        <outlet property="toumeiButton" destination="9LY-se-2FH" id="SFy-fF-dgA"/>
+                        <outlet property="yuruyakaButton" destination="xAH-9G-C8v" id="bUG-Rm-GbG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="344" y="145"/>
+        </scene>
+    </scenes>
+</document>

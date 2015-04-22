@@ -13,21 +13,47 @@
 		41F43C761AE7463600B3F400 /* FunikiIllumiMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */; };
 		41F43C771AE7463600B3F400 /* FunikiIllumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */; };
 		41F43C791AE7464600B3F400 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C781AE7464600B3F400 /* Images.xcassets */; };
-		41F43C871AE7465200B3F400 /* Button-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C7B1AE7465200B3F400 /* Button-blue@2x.png */; };
-		41F43C881AE7465200B3F400 /* Button-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C7C1AE7465200B3F400 /* Button-green@2x.png */; };
-		41F43C891AE7465200B3F400 /* Button-off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C7D1AE7465200B3F400 /* Button-off@2x.png */; };
-		41F43C8A1AE7465200B3F400 /* Button-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C7E1AE7465200B3F400 /* Button-red@2x.png */; };
-		41F43C8B1AE7465200B3F400 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C7F1AE7465200B3F400 /* Default-568h@2x.png */; };
-		41F43C8C1AE7465200B3F400 /* GraphFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C801AE7465200B3F400 /* GraphFrame@2x.png */; };
-		41F43C8D1AE7465200B3F400 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C811AE7465200B3F400 /* Icon-60@2x.png */; };
-		41F43C8E1AE7465200B3F400 /* Illuminate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C821AE7465200B3F400 /* Illuminate@2x.png */; };
-		41F43C8F1AE7465200B3F400 /* Pairing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C831AE7465200B3F400 /* Pairing@2x.png */; };
-		41F43C901AE7465200B3F400 /* SDKlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C841AE7465200B3F400 /* SDKlogo@2x.png */; };
-		41F43C911AE7465200B3F400 /* SDKtab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C851AE7465200B3F400 /* SDKtab@2x.png */; };
-		41F43C921AE7465200B3F400 /* Sensor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C861AE7465200B3F400 /* Sensor@2x.png */; };
+		41F6BCDD1AE7A80A005D60B0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6BCDC1AE7A80A005D60B0 /* InterfaceController.swift */; };
+		41F6BCDF1AE7A80A005D60B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F6BCDE1AE7A80A005D60B0 /* Images.xcassets */; };
+		41F6BCE31AE7A80A005D60B0 /* FunikiIllumi WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 41F6BCE21AE7A80A005D60B0 /* FunikiIllumi WatchKit App.app */; };
+		41F6BCEB1AE7A80A005D60B0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F6BCE91AE7A80A005D60B0 /* Interface.storyboard */; };
+		41F6BCED1AE7A80A005D60B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F6BCEC1AE7A80A005D60B0 /* Images.xcassets */; };
+		41F6BCF01AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 41F6BCD81AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		41F6BCF91AE7E7B0005D60B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F6BCF81AE7E7B0005D60B0 /* LaunchScreen.xib */; };
 		8C79FE371A7DC0310091F040 /* libFunikiSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C79FE361A7DC0310091F040 /* libFunikiSDK.a */; };
 		8CA309A01A8C4AB0002A2DD3 /* Funiki.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3099E1A8C4AB0002A2DD3 /* Funiki.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41F6BCE41AE7A80A005D60B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C79FDFD1A7DBEB80091F040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41F6BCE11AE7A80A005D60B0;
+			remoteInfo = "FunikiIllumi WatchKit App";
+		};
+		41F6BCEE1AE7A80A005D60B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C79FDFD1A7DBEB80091F040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41F6BCD71AE7A80A005D60B0;
+			remoteInfo = "FunikiIllumi WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		41F6BCF71AE7A80A005D60B0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				41F6BCF01AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		41F43C6D1AE745D200B3F400 /* FunikiIllumi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunikiIllumi-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -37,19 +63,16 @@
 		41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiIllumiMotionViewController.swift; path = FunikiIllumi/FunikiIllumiMotionViewController.swift; sourceTree = SOURCE_ROOT; };
 		41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiIllumiViewController.swift; path = FunikiIllumi/FunikiIllumiViewController.swift; sourceTree = SOURCE_ROOT; };
 		41F43C781AE7464600B3F400 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FunikiIllumi/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		41F43C7B1AE7465200B3F400 /* Button-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-blue@2x.png"; sourceTree = "<group>"; };
-		41F43C7C1AE7465200B3F400 /* Button-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-green@2x.png"; sourceTree = "<group>"; };
-		41F43C7D1AE7465200B3F400 /* Button-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-off@2x.png"; sourceTree = "<group>"; };
-		41F43C7E1AE7465200B3F400 /* Button-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-red@2x.png"; sourceTree = "<group>"; };
-		41F43C7F1AE7465200B3F400 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		41F43C801AE7465200B3F400 /* GraphFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GraphFrame@2x.png"; sourceTree = "<group>"; };
-		41F43C811AE7465200B3F400 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
-		41F43C821AE7465200B3F400 /* Illuminate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Illuminate@2x.png"; sourceTree = "<group>"; };
-		41F43C831AE7465200B3F400 /* Pairing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pairing@2x.png"; sourceTree = "<group>"; };
-		41F43C841AE7465200B3F400 /* SDKlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SDKlogo@2x.png"; sourceTree = "<group>"; };
-		41F43C851AE7465200B3F400 /* SDKtab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SDKtab@2x.png"; sourceTree = "<group>"; };
-		41F43C861AE7465200B3F400 /* Sensor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sensor@2x.png"; sourceTree = "<group>"; };
 		41F43C931AE7465800B3F400 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FunikiIllumi/Info.plist; sourceTree = SOURCE_ROOT; };
+		41F6BCD81AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FunikiIllumi WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F6BCDB1AE7A80A005D60B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F6BCDC1AE7A80A005D60B0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		41F6BCDE1AE7A80A005D60B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		41F6BCE21AE7A80A005D60B0 /* FunikiIllumi WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FunikiIllumi WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F6BCE81AE7A80A005D60B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F6BCEA1AE7A80A005D60B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		41F6BCEC1AE7A80A005D60B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		41F6BCF81AE7E7B0005D60B0 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = FunikiIllumi/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
 		8C79FE051A7DBEB80091F040 /* FunikiIllumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunikiIllumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C79FE361A7DC0310091F040 /* libFunikiSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFunikiSDK.a; sourceTree = "<group>"; };
 		8CA3099E1A8C4AB0002A2DD3 /* Funiki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Funiki.m; sourceTree = "<group>"; };
@@ -63,6 +86,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		41F6BCD51AE7A80A005D60B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C79FE021A7DBEB80091F040 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,32 +104,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41F43C7A1AE7465200B3F400 /* SDKImage */ = {
+		41F6BCD91AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				41F43C7B1AE7465200B3F400 /* Button-blue@2x.png */,
-				41F43C7C1AE7465200B3F400 /* Button-green@2x.png */,
-				41F43C7D1AE7465200B3F400 /* Button-off@2x.png */,
-				41F43C7E1AE7465200B3F400 /* Button-red@2x.png */,
-				41F43C7F1AE7465200B3F400 /* Default-568h@2x.png */,
-				41F43C801AE7465200B3F400 /* GraphFrame@2x.png */,
-				41F43C811AE7465200B3F400 /* Icon-60@2x.png */,
-				41F43C821AE7465200B3F400 /* Illuminate@2x.png */,
-				41F43C831AE7465200B3F400 /* Pairing@2x.png */,
-				41F43C841AE7465200B3F400 /* SDKlogo@2x.png */,
-				41F43C851AE7465200B3F400 /* SDKtab@2x.png */,
-				41F43C861AE7465200B3F400 /* Sensor@2x.png */,
+				41F6BCDC1AE7A80A005D60B0 /* InterfaceController.swift */,
+				41F6BCDE1AE7A80A005D60B0 /* Images.xcassets */,
+				41F6BCDA1AE7A80A005D60B0 /* Supporting Files */,
 			);
-			name = SDKImage;
-			path = FunikiIllumi/SDKImage;
-			sourceTree = SOURCE_ROOT;
+			path = "FunikiIllumi WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		41F6BCDA1AE7A80A005D60B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41F6BCDB1AE7A80A005D60B0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41F6BCE61AE7A80A005D60B0 /* FunikiIllumi WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				41F6BCE91AE7A80A005D60B0 /* Interface.storyboard */,
+				41F6BCEC1AE7A80A005D60B0 /* Images.xcassets */,
+				41F6BCE71AE7A80A005D60B0 /* Supporting Files */,
+			);
+			path = "FunikiIllumi WatchKit App";
+			sourceTree = "<group>";
+		};
+		41F6BCE71AE7A80A005D60B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41F6BCE81AE7A80A005D60B0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
 		};
 		8C79FDFC1A7DBEB80091F040 = {
 			isa = PBXGroup;
 			children = (
+				8C79FE071A7DBEB80091F040 /* FunikiIllumi */,
+				41F6BCD91AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension */,
+				41F6BCE61AE7A80A005D60B0 /* FunikiIllumi WatchKit App */,
 				41F43C6D1AE745D200B3F400 /* FunikiIllumi-Bridging-Header.h */,
 				8C79FE2D1A7DC0310091F040 /* FunikiSDK */,
-				8C79FE071A7DBEB80091F040 /* FunikiIllumi */,
 				8C79FE061A7DBEB80091F040 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				8C79FE051A7DBEB80091F040 /* FunikiIllumi.app */,
+				41F6BCD81AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension.appex */,
+				41F6BCE21AE7A80A005D60B0 /* FunikiIllumi WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,7 +171,7 @@
 				41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */,
 				41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */,
 				41F43C781AE7464600B3F400 /* Images.xcassets */,
-				41F43C7A1AE7465200B3F400 /* SDKImage */,
+				41F6BCF81AE7E7B0005D60B0 /* LaunchScreen.xib */,
 				8C79FE081A7DBEB80091F040 /* Supporting Files */,
 			);
 			name = FunikiIllumi;
@@ -155,6 +205,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		41F6BCD71AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41F6BCF41AE7A80A005D60B0 /* Build configuration list for PBXNativeTarget "FunikiIllumi WatchKit Extension" */;
+			buildPhases = (
+				41F6BCD41AE7A80A005D60B0 /* Sources */,
+				41F6BCD51AE7A80A005D60B0 /* Frameworks */,
+				41F6BCD61AE7A80A005D60B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41F6BCE51AE7A80A005D60B0 /* PBXTargetDependency */,
+			);
+			name = "FunikiIllumi WatchKit Extension";
+			productName = "FunikiIllumi WatchKit Extension";
+			productReference = 41F6BCD81AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		41F6BCE11AE7A80A005D60B0 /* FunikiIllumi WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41F6BCF11AE7A80A005D60B0 /* Build configuration list for PBXNativeTarget "FunikiIllumi WatchKit App" */;
+			buildPhases = (
+				41F6BCE01AE7A80A005D60B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FunikiIllumi WatchKit App";
+			productName = "FunikiIllumi WatchKit App";
+			productReference = 41F6BCE21AE7A80A005D60B0 /* FunikiIllumi WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		8C79FE041A7DBEB80091F040 /* FunikiIllumi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C79FE241A7DBEB80091F040 /* Build configuration list for PBXNativeTarget "FunikiIllumi" */;
@@ -162,10 +245,12 @@
 				8C79FE011A7DBEB80091F040 /* Sources */,
 				8C79FE021A7DBEB80091F040 /* Frameworks */,
 				8C79FE031A7DBEB80091F040 /* Resources */,
+				41F6BCF71AE7A80A005D60B0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				41F6BCEF1AE7A80A005D60B0 /* PBXTargetDependency */,
 			);
 			name = FunikiIllumi;
 			productName = FunikiSDKExampleSwift;
@@ -181,6 +266,13 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Matilde Inc.";
 				TargetAttributes = {
+					41F6BCD71AE7A80A005D60B0 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2D3LDXJ36E;
+					};
+					41F6BCE11AE7A80A005D60B0 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					8C79FE041A7DBEB80091F040 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 2D3LDXJ36E;
@@ -200,35 +292,52 @@
 			projectRoot = "";
 			targets = (
 				8C79FE041A7DBEB80091F040 /* FunikiIllumi */,
+				41F6BCD71AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension */,
+				41F6BCE11AE7A80A005D60B0 /* FunikiIllumi WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		41F6BCD61AE7A80A005D60B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F6BCE31AE7A80A005D60B0 /* FunikiIllumi WatchKit App.app in Resources */,
+				41F6BCDF1AE7A80A005D60B0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F6BCE01AE7A80A005D60B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F6BCEB1AE7A80A005D60B0 /* Interface.storyboard in Resources */,
+				41F6BCED1AE7A80A005D60B0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C79FE031A7DBEB80091F040 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				41F43C791AE7464600B3F400 /* Images.xcassets in Resources */,
+				41F6BCF91AE7E7B0005D60B0 /* LaunchScreen.xib in Resources */,
 				41F43C751AE7463600B3F400 /* FunikiIllumi.storyboard in Resources */,
-				41F43C901AE7465200B3F400 /* SDKlogo@2x.png in Resources */,
-				41F43C881AE7465200B3F400 /* Button-green@2x.png in Resources */,
-				41F43C911AE7465200B3F400 /* SDKtab@2x.png in Resources */,
-				41F43C8C1AE7465200B3F400 /* GraphFrame@2x.png in Resources */,
-				41F43C891AE7465200B3F400 /* Button-off@2x.png in Resources */,
-				41F43C8D1AE7465200B3F400 /* Icon-60@2x.png in Resources */,
-				41F43C8E1AE7465200B3F400 /* Illuminate@2x.png in Resources */,
-				41F43C8F1AE7465200B3F400 /* Pairing@2x.png in Resources */,
-				41F43C8A1AE7465200B3F400 /* Button-red@2x.png in Resources */,
-				41F43C8B1AE7465200B3F400 /* Default-568h@2x.png in Resources */,
-				41F43C921AE7465200B3F400 /* Sensor@2x.png in Resources */,
-				41F43C871AE7465200B3F400 /* Button-blue@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		41F6BCD41AE7A80A005D60B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F6BCDD1AE7A80A005D60B0 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C79FE011A7DBEB80091F040 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,7 +352,108 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		41F6BCE51AE7A80A005D60B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41F6BCE11AE7A80A005D60B0 /* FunikiIllumi WatchKit App */;
+			targetProxy = 41F6BCE41AE7A80A005D60B0 /* PBXContainerItemProxy */;
+		};
+		41F6BCEF1AE7A80A005D60B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41F6BCD71AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension */;
+			targetProxy = 41F6BCEE1AE7A80A005D60B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41F6BCE91AE7A80A005D60B0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41F6BCEA1AE7A80A005D60B0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		41F6BCF21AE7A80A005D60B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = FunikiIllumi_WatchKit_Extension;
+				INFOPLIST_FILE = "FunikiIllumi WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd22a9ca-5dac-4de6-868b-8b3225171d5b";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		41F6BCF31AE7A80A005D60B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = FunikiIllumi_WatchKit_Extension;
+				INFOPLIST_FILE = "FunikiIllumi WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd22a9ca-5dac-4de6-868b-8b3225171d5b";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		41F6BCF51AE7A80A005D60B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FunikiIllumi WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "cd22a9ca-5dac-4de6-868b-8b3225171d5b";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		41F6BCF61AE7A80A005D60B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "FunikiIllumi WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "cd22a9ca-5dac-4de6-868b-8b3225171d5b";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		8C79FE221A7DBEB80091F040 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,6 +534,7 @@
 		8C79FE251A7DBEB80091F040 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FunikiIllumi/Info.plist;
@@ -333,6 +544,7 @@
 					"$(PROJECT_DIR)/FunikiSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd22a9ca-5dac-4de6-868b-8b3225171d5b";
 				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,8 +554,10 @@
 		8C79FE261A7DBEB80091F040 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
 				INFOPLIST_FILE = FunikiIllumi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -351,6 +565,7 @@
 					"$(PROJECT_DIR)/FunikiSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd22a9ca-5dac-4de6-868b-8b3225171d5b";
 				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -359,6 +574,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		41F6BCF11AE7A80A005D60B0 /* Build configuration list for PBXNativeTarget "FunikiIllumi WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F6BCF21AE7A80A005D60B0 /* Debug */,
+				41F6BCF31AE7A80A005D60B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		41F6BCF41AE7A80A005D60B0 /* Build configuration list for PBXNativeTarget "FunikiIllumi WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F6BCF51AE7A80A005D60B0 /* Debug */,
+				41F6BCF61AE7A80A005D60B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8C79FE001A7DBEB80091F040 /* Build configuration list for PBXProject "FunikiIllumi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
