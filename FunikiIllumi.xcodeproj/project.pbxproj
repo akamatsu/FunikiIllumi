@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41F43C731AE7463600B3F400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C6E1AE7463600B3F400 /* AppDelegate.swift */; };
+		41F43C741AE7463600B3F400 /* FunikiDevicePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */; };
+		41F43C751AE7463600B3F400 /* FunikiIllumi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C701AE7463600B3F400 /* FunikiIllumi.storyboard */; };
+		41F43C761AE7463600B3F400 /* FunikiIllumiMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */; };
+		41F43C771AE7463600B3F400 /* FunikiIllumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */; };
+		41F43C791AE7464600B3F400 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C781AE7464600B3F400 /* Images.xcassets */; };
+		41F43C871AE7465200B3F400 /* Button-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C7B1AE7465200B3F400 /* Button-blue@2x.png */; };
+		41F43C881AE7465200B3F400 /* Button-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C7C1AE7465200B3F400 /* Button-green@2x.png */; };
+		41F43C891AE7465200B3F400 /* Button-off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C7D1AE7465200B3F400 /* Button-off@2x.png */; };
+		41F43C8A1AE7465200B3F400 /* Button-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C7E1AE7465200B3F400 /* Button-red@2x.png */; };
+		41F43C8B1AE7465200B3F400 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C7F1AE7465200B3F400 /* Default-568h@2x.png */; };
+		41F43C8C1AE7465200B3F400 /* GraphFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C801AE7465200B3F400 /* GraphFrame@2x.png */; };
+		41F43C8D1AE7465200B3F400 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C811AE7465200B3F400 /* Icon-60@2x.png */; };
+		41F43C8E1AE7465200B3F400 /* Illuminate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C821AE7465200B3F400 /* Illuminate@2x.png */; };
+		41F43C8F1AE7465200B3F400 /* Pairing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C831AE7465200B3F400 /* Pairing@2x.png */; };
+		41F43C901AE7465200B3F400 /* SDKlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C841AE7465200B3F400 /* SDKlogo@2x.png */; };
+		41F43C911AE7465200B3F400 /* SDKtab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C851AE7465200B3F400 /* SDKtab@2x.png */; };
+		41F43C921AE7465200B3F400 /* Sensor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C861AE7465200B3F400 /* Sensor@2x.png */; };
+		8C79FE371A7DC0310091F040 /* libFunikiSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C79FE361A7DC0310091F040 /* libFunikiSDK.a */; };
+		8CA309A01A8C4AB0002A2DD3 /* Funiki.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3099E1A8C4AB0002A2DD3 /* Funiki.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41F43C6D1AE745D200B3F400 /* FunikiIllumi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunikiIllumi-Bridging-Header.h"; sourceTree = "<group>"; };
+		41F43C6E1AE7463600B3F400 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FunikiIllumi/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiDevicePickerViewController.swift; path = FunikiIllumi/FunikiDevicePickerViewController.swift; sourceTree = SOURCE_ROOT; };
+		41F43C701AE7463600B3F400 /* FunikiIllumi.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FunikiIllumi.storyboard; path = FunikiIllumi/FunikiIllumi.storyboard; sourceTree = SOURCE_ROOT; };
+		41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiIllumiMotionViewController.swift; path = FunikiIllumi/FunikiIllumiMotionViewController.swift; sourceTree = SOURCE_ROOT; };
+		41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiIllumiViewController.swift; path = FunikiIllumi/FunikiIllumiViewController.swift; sourceTree = SOURCE_ROOT; };
+		41F43C781AE7464600B3F400 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FunikiIllumi/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		41F43C7B1AE7465200B3F400 /* Button-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-blue@2x.png"; sourceTree = "<group>"; };
+		41F43C7C1AE7465200B3F400 /* Button-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-green@2x.png"; sourceTree = "<group>"; };
+		41F43C7D1AE7465200B3F400 /* Button-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-off@2x.png"; sourceTree = "<group>"; };
+		41F43C7E1AE7465200B3F400 /* Button-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-red@2x.png"; sourceTree = "<group>"; };
+		41F43C7F1AE7465200B3F400 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		41F43C801AE7465200B3F400 /* GraphFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GraphFrame@2x.png"; sourceTree = "<group>"; };
+		41F43C811AE7465200B3F400 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		41F43C821AE7465200B3F400 /* Illuminate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Illuminate@2x.png"; sourceTree = "<group>"; };
+		41F43C831AE7465200B3F400 /* Pairing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pairing@2x.png"; sourceTree = "<group>"; };
+		41F43C841AE7465200B3F400 /* SDKlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SDKlogo@2x.png"; sourceTree = "<group>"; };
+		41F43C851AE7465200B3F400 /* SDKtab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SDKtab@2x.png"; sourceTree = "<group>"; };
+		41F43C861AE7465200B3F400 /* Sensor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sensor@2x.png"; sourceTree = "<group>"; };
+		41F43C931AE7465800B3F400 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FunikiIllumi/Info.plist; sourceTree = SOURCE_ROOT; };
+		8C79FE051A7DBEB80091F040 /* FunikiIllumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunikiIllumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C79FE361A7DC0310091F040 /* libFunikiSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFunikiSDK.a; sourceTree = "<group>"; };
+		8CA3099E1A8C4AB0002A2DD3 /* Funiki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Funiki.m; sourceTree = "<group>"; };
+		8CA3099F1A8C4AB0002A2DD3 /* Funiki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Funiki.h; sourceTree = "<group>"; };
+		8CB4B2821A7F87D700A279D2 /* FunikiSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunikiSDK.h; sourceTree = "<group>"; };
+		8CB4B2831A7F87D700A279D2 /* MADiscoveredPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADiscoveredPeripheral.h; sourceTree = "<group>"; };
+		8CB4B2841A7F87D700A279D2 /* MAFunikiAccelerationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFunikiAccelerationData.h; sourceTree = "<group>"; };
+		8CB4B2851A7F87D700A279D2 /* MAFunikiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFunikiManager.h; sourceTree = "<group>"; };
+		8CB4B2861A7F87D700A279D2 /* MAFunikiMotionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFunikiMotionData.h; sourceTree = "<group>"; };
+		8CB4B2871A7F87D700A279D2 /* MAFunikiRotationRateData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFunikiRotationRateData.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C79FE021A7DBEB80091F040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C79FE371A7DC0310091F040 /* libFunikiSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41F43C7A1AE7465200B3F400 /* SDKImage */ = {
+			isa = PBXGroup;
+			children = (
+				41F43C7B1AE7465200B3F400 /* Button-blue@2x.png */,
+				41F43C7C1AE7465200B3F400 /* Button-green@2x.png */,
+				41F43C7D1AE7465200B3F400 /* Button-off@2x.png */,
+				41F43C7E1AE7465200B3F400 /* Button-red@2x.png */,
+				41F43C7F1AE7465200B3F400 /* Default-568h@2x.png */,
+				41F43C801AE7465200B3F400 /* GraphFrame@2x.png */,
+				41F43C811AE7465200B3F400 /* Icon-60@2x.png */,
+				41F43C821AE7465200B3F400 /* Illuminate@2x.png */,
+				41F43C831AE7465200B3F400 /* Pairing@2x.png */,
+				41F43C841AE7465200B3F400 /* SDKlogo@2x.png */,
+				41F43C851AE7465200B3F400 /* SDKtab@2x.png */,
+				41F43C861AE7465200B3F400 /* Sensor@2x.png */,
+			);
+			name = SDKImage;
+			path = FunikiIllumi/SDKImage;
+			sourceTree = SOURCE_ROOT;
+		};
+		8C79FDFC1A7DBEB80091F040 = {
+			isa = PBXGroup;
+			children = (
+				41F43C6D1AE745D200B3F400 /* FunikiIllumi-Bridging-Header.h */,
+				8C79FE2D1A7DC0310091F040 /* FunikiSDK */,
+				8C79FE071A7DBEB80091F040 /* FunikiIllumi */,
+				8C79FE061A7DBEB80091F040 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C79FE061A7DBEB80091F040 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C79FE051A7DBEB80091F040 /* FunikiIllumi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C79FE071A7DBEB80091F040 /* FunikiIllumi */ = {
+			isa = PBXGroup;
+			children = (
+				41F43C6E1AE7463600B3F400 /* AppDelegate.swift */,
+				41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */,
+				41F43C701AE7463600B3F400 /* FunikiIllumi.storyboard */,
+				41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */,
+				41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */,
+				41F43C781AE7464600B3F400 /* Images.xcassets */,
+				41F43C7A1AE7465200B3F400 /* SDKImage */,
+				8C79FE081A7DBEB80091F040 /* Supporting Files */,
+			);
+			name = FunikiIllumi;
+			path = FunikiSDKExampleSwift;
+			sourceTree = "<group>";
+		};
+		8C79FE081A7DBEB80091F040 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41F43C931AE7465800B3F400 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C79FE2D1A7DC0310091F040 /* FunikiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4B2821A7F87D700A279D2 /* FunikiSDK.h */,
+				8CA3099F1A8C4AB0002A2DD3 /* Funiki.h */,
+				8CA3099E1A8C4AB0002A2DD3 /* Funiki.m */,
+				8CB4B2831A7F87D700A279D2 /* MADiscoveredPeripheral.h */,
+				8CB4B2841A7F87D700A279D2 /* MAFunikiAccelerationData.h */,
+				8CB4B2851A7F87D700A279D2 /* MAFunikiManager.h */,
+				8CB4B2861A7F87D700A279D2 /* MAFunikiMotionData.h */,
+				8CB4B2871A7F87D700A279D2 /* MAFunikiRotationRateData.h */,
+				8C79FE361A7DC0310091F040 /* libFunikiSDK.a */,
+			);
+			path = FunikiSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C79FE041A7DBEB80091F040 /* FunikiIllumi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C79FE241A7DBEB80091F040 /* Build configuration list for PBXNativeTarget "FunikiIllumi" */;
+			buildPhases = (
+				8C79FE011A7DBEB80091F040 /* Sources */,
+				8C79FE021A7DBEB80091F040 /* Frameworks */,
+				8C79FE031A7DBEB80091F040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunikiIllumi;
+			productName = FunikiSDKExampleSwift;
+			productReference = 8C79FE051A7DBEB80091F040 /* FunikiIllumi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C79FDFD1A7DBEB80091F040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Matilde Inc.";
+				TargetAttributes = {
+					8C79FE041A7DBEB80091F040 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2D3LDXJ36E;
+					};
+				};
+			};
+			buildConfigurationList = 8C79FE001A7DBEB80091F040 /* Build configuration list for PBXProject "FunikiIllumi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+			);
+			mainGroup = 8C79FDFC1A7DBEB80091F040;
+			productRefGroup = 8C79FE061A7DBEB80091F040 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C79FE041A7DBEB80091F040 /* FunikiIllumi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C79FE031A7DBEB80091F040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F43C791AE7464600B3F400 /* Images.xcassets in Resources */,
+				41F43C751AE7463600B3F400 /* FunikiIllumi.storyboard in Resources */,
+				41F43C901AE7465200B3F400 /* SDKlogo@2x.png in Resources */,
+				41F43C881AE7465200B3F400 /* Button-green@2x.png in Resources */,
+				41F43C911AE7465200B3F400 /* SDKtab@2x.png in Resources */,
+				41F43C8C1AE7465200B3F400 /* GraphFrame@2x.png in Resources */,
+				41F43C891AE7465200B3F400 /* Button-off@2x.png in Resources */,
+				41F43C8D1AE7465200B3F400 /* Icon-60@2x.png in Resources */,
+				41F43C8E1AE7465200B3F400 /* Illuminate@2x.png in Resources */,
+				41F43C8F1AE7465200B3F400 /* Pairing@2x.png in Resources */,
+				41F43C8A1AE7465200B3F400 /* Button-red@2x.png in Resources */,
+				41F43C8B1AE7465200B3F400 /* Default-568h@2x.png in Resources */,
+				41F43C921AE7465200B3F400 /* Sensor@2x.png in Resources */,
+				41F43C871AE7465200B3F400 /* Button-blue@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C79FE011A7DBEB80091F040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F43C761AE7463600B3F400 /* FunikiIllumiMotionViewController.swift in Sources */,
+				41F43C731AE7463600B3F400 /* AppDelegate.swift in Sources */,
+				8CA309A01A8C4AB0002A2DD3 /* Funiki.m in Sources */,
+				41F43C741AE7463600B3F400 /* FunikiDevicePickerViewController.swift in Sources */,
+				41F43C771AE7463600B3F400 /* FunikiIllumiViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8C79FE221A7DBEB80091F040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C79FE231A7DBEB80091F040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C79FE251A7DBEB80091F040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FunikiIllumi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FunikiSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C79FE261A7DBEB80091F040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FunikiIllumi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FunikiSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C79FE001A7DBEB80091F040 /* Build configuration list for PBXProject "FunikiIllumi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C79FE221A7DBEB80091F040 /* Debug */,
+				8C79FE231A7DBEB80091F040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C79FE241A7DBEB80091F040 /* Build configuration list for PBXNativeTarget "FunikiIllumi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C79FE251A7DBEB80091F040 /* Debug */,
+				8C79FE261A7DBEB80091F040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C79FDFD1A7DBEB80091F040 /* Project object */;
+}
