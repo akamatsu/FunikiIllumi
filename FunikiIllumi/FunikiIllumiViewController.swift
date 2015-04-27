@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import iAd
 
 class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAFunikiManagerDataDelegate {
 
@@ -16,7 +17,7 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 	var brightness: CGFloat = 1.0
 	var counter = 0
 	var timerDuration = 0.25
-	var variationName = ""
+	var variationID = ""
 	let selectedColor = UIColor(hue: 0.5861, saturation: 1.0, brightness: 1.0, alpha: 1.0)
 	let unselectedColor = UIColor(hue: 0.0, saturation: 0.0, brightness: 1.0, alpha: 1.0)
 	
@@ -28,28 +29,29 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
     // MARK: -
     func updateConnectionStatus() {
         if funikiManager.connected {
-            self.connectionLabel.text = "Connected"
+            self.connectionLabel.text = NSLocalizedString("Connected", comment: "")
         }else {
-            self.connectionLabel.text = "Not Connected"
+            self.connectionLabel.text = NSLocalizedString("Not Connected", comment: "")
         }
     }
     
     func updateBatteryLevel(){
+		let batteryLevelString = NSLocalizedString("Battery Level: ", comment: "")
         switch funikiManager.batteryLevel {
         case .Unknown:
-            self.batteryLabel.text = "Battery Level: Unknow"
+            self.batteryLabel.text = batteryLevelString + NSLocalizedString("Unknow", comment: "")
             
         case .Low:
-            self.batteryLabel.text = "Battery Level: Low"
-            
+            self.batteryLabel.text = batteryLevelString + NSLocalizedString("Low", comment: "")
+			
         case .Medium:
-            self.batteryLabel.text = "Battery Level: Midium"
+            self.batteryLabel.text = batteryLevelString + NSLocalizedString("Midium", comment: "")
             
         case .High:
-            self.batteryLabel.text = "Battery Level: High"
+            self.batteryLabel.text = batteryLevelString + NSLocalizedString("High", comment: "")
             
         default:
-            self.batteryLabel.text = "Battery Level: Unknow"
+            self.batteryLabel.text = batteryLevelString + NSLocalizedString("Unknow", comment: "")
         }
     }
 
@@ -61,16 +63,16 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-       // self.volumeSegmentedControl.selectedSegmentIndex = 2
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-   
-        funikiManager.delegate = self
-        funikiManager.dataDelegate = self
+		self.canDisplayBannerAds = true
+		
+  		funikiManager.delegate = self
+		funikiManager.dataDelegate = self
 		
 		variationSelected(defaultButton)
+   }
 	
+    override func viewWillAppear(animated: Bool) {
+   
         super.viewWillAppear(animated)
     }
 	
@@ -118,11 +120,11 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 	// ---------------------------------------------------------------------
 	
 	@IBAction func variationSelected(sender: UIButton) {
-		variationName = sender.titleLabel!.text!
+		variationID = sender.restorationIdentifier!
 		
 		for button:UIButton in variations {
-			let name = button.titleLabel!.text!
-			if name == variationName {
+			let id = button.restorationIdentifier!
+			if id == variationID {
 				button.backgroundColor = selectedColor
 				button.setTitleColor(unselectedColor, forState: UIControlState.Normal)
 			} else {
@@ -131,7 +133,7 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 			}
 		}
 		
-		if variationName == "Toumei" {
+		if variationID == "(None)" {
 			toumei()
 			illuminationTimer?.invalidate()
 			illuminationTimer = nil
@@ -143,8 +145,8 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 	}
 	
 	func timerFired(timer:NSTimer) {
-		switch variationName {
-			case "Tou Mei":
+		switch variationID {
+			case "(None)":
 				toumei()
 			case "Yuru Yaka":
 				yuruyaka()

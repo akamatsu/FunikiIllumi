@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  FunikiIllumi
+
+  Created by aka on 2015/04/28.
+  Copyright (c) 2015年 Matilde Inc. All rights reserved.
+*/
+
+CFBundleDisplayName = "色彩メガネ";

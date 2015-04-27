@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4135E4AC1AEE887A0026D958 /* FunikiIllumi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4135E4AE1AEE887A0026D958 /* FunikiIllumi.storyboard */; };
+		4135E4BB1AEE8CC00026D958 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4135E4BD1AEE8CC00026D958 /* Localizable.strings */; };
+		4135E4C11AEE98580026D958 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4135E4C31AEE98580026D958 /* InfoPlist.strings */; };
+		4135E4C61AEE99B00026D958 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4135E4C51AEE99B00026D958 /* iAd.framework */; };
 		41F43C731AE7463600B3F400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C6E1AE7463600B3F400 /* AppDelegate.swift */; };
 		41F43C741AE7463600B3F400 /* FunikiDevicePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */; };
-		41F43C751AE7463600B3F400 /* FunikiIllumi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C701AE7463600B3F400 /* FunikiIllumi.storyboard */; };
 		41F43C761AE7463600B3F400 /* FunikiIllumiMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */; };
 		41F43C771AE7463600B3F400 /* FunikiIllumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */; };
 		41F43C791AE7464600B3F400 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C781AE7464600B3F400 /* Images.xcassets */; };
@@ -56,10 +59,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4135E4AB1AEE88590026D958 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Interface.strings; sourceTree = "<group>"; };
+		4135E4AD1AEE887A0026D958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FunikiIllumi.storyboard; sourceTree = "<group>"; };
+		4135E4B01AEE887D0026D958 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/FunikiIllumi.strings; sourceTree = "<group>"; };
+		4135E4BC1AEE8CC00026D958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4135E4BE1AEE8CC20026D958 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4135E4C21AEE98580026D958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4135E4C41AEE985F0026D958 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4135E4C51AEE99B00026D958 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		41F43C6D1AE745D200B3F400 /* FunikiIllumi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunikiIllumi-Bridging-Header.h"; sourceTree = "<group>"; };
 		41F43C6E1AE7463600B3F400 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FunikiIllumi/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiDevicePickerViewController.swift; path = FunikiIllumi/FunikiDevicePickerViewController.swift; sourceTree = SOURCE_ROOT; };
-		41F43C701AE7463600B3F400 /* FunikiIllumi.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FunikiIllumi.storyboard; path = FunikiIllumi/FunikiIllumi.storyboard; sourceTree = SOURCE_ROOT; };
 		41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiIllumiMotionViewController.swift; path = FunikiIllumi/FunikiIllumiMotionViewController.swift; sourceTree = SOURCE_ROOT; };
 		41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiIllumiViewController.swift; path = FunikiIllumi/FunikiIllumiViewController.swift; sourceTree = SOURCE_ROOT; };
 		41F43C781AE7464600B3F400 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FunikiIllumi/Images.xcassets; sourceTree = SOURCE_ROOT; };
@@ -97,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4135E4C61AEE99B00026D958 /* iAd.framework in Frameworks */,
 				8C79FE371A7DC0310091F040 /* libFunikiSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +154,7 @@
 		8C79FDFC1A7DBEB80091F040 = {
 			isa = PBXGroup;
 			children = (
+				4135E4C51AEE99B00026D958 /* iAd.framework */,
 				8C79FE071A7DBEB80091F040 /* FunikiIllumi */,
 				41F6BCD91AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension */,
 				41F6BCE61AE7A80A005D60B0 /* FunikiIllumi WatchKit App */,
@@ -167,9 +179,10 @@
 			children = (
 				41F43C6E1AE7463600B3F400 /* AppDelegate.swift */,
 				41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */,
-				41F43C701AE7463600B3F400 /* FunikiIllumi.storyboard */,
 				41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */,
 				41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */,
+				4135E4AE1AEE887A0026D958 /* FunikiIllumi.storyboard */,
+				4135E4BD1AEE8CC00026D958 /* Localizable.strings */,
 				41F43C781AE7464600B3F400 /* Images.xcassets */,
 				41F6BCF81AE7E7B0005D60B0 /* LaunchScreen.xib */,
 				8C79FE081A7DBEB80091F040 /* Supporting Files */,
@@ -182,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				41F43C931AE7465800B3F400 /* Info.plist */,
+				4135E4C31AEE98580026D958 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -285,6 +299,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				ja,
 			);
 			mainGroup = 8C79FDFC1A7DBEB80091F040;
 			productRefGroup = 8C79FE061A7DBEB80091F040 /* Products */;
@@ -322,8 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				41F43C791AE7464600B3F400 /* Images.xcassets in Resources */,
+				4135E4BB1AEE8CC00026D958 /* Localizable.strings in Resources */,
 				41F6BCF91AE7E7B0005D60B0 /* LaunchScreen.xib in Resources */,
-				41F43C751AE7463600B3F400 /* FunikiIllumi.storyboard in Resources */,
+				4135E4AC1AEE887A0026D958 /* FunikiIllumi.storyboard in Resources */,
+				4135E4C11AEE98580026D958 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,10 +383,40 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4135E4AE1AEE887A0026D958 /* FunikiIllumi.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4135E4AD1AEE887A0026D958 /* Base */,
+				4135E4B01AEE887D0026D958 /* ja */,
+			);
+			name = FunikiIllumi.storyboard;
+			path = FunikiIllumi;
+			sourceTree = SOURCE_ROOT;
+		};
+		4135E4BD1AEE8CC00026D958 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4135E4BC1AEE8CC00026D958 /* Base */,
+				4135E4BE1AEE8CC20026D958 /* ja */,
+			);
+			name = Localizable.strings;
+			path = FunikiIllumi;
+			sourceTree = SOURCE_ROOT;
+		};
+		4135E4C31AEE98580026D958 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4135E4C21AEE98580026D958 /* Base */,
+				4135E4C41AEE985F0026D958 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = SOURCE_ROOT;
+		};
 		41F6BCE91AE7A80A005D60B0 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				41F6BCEA1AE7A80A005D60B0 /* Base */,
+				4135E4AB1AEE88590026D958 /* ja */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";

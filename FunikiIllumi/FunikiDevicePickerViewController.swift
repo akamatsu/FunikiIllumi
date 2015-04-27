@@ -12,8 +12,7 @@ class FunikiDevicePickerViewController: UITableViewController, MAFunikiManagerDe
     // MARK: - UITableViewController
     override func viewDidLoad(){
         super.viewDidLoad()
-        //self.title = "雰囲気メガネを選択"
-		self.title = "Choose Your Glasses"
+ 		self.title = NSLocalizedString("Choose Your Glasses", comment: "")
     }
     
     override func viewWillAppear(animated: Bool) {

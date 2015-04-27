@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Toki Doki"; ObjectID = "43t-ur-NiZ"; */
+"43t-ur-NiZ.normalTitle" = "ときどき";
+
+/* Class = "UILabel"; text = "Battery Level"; ObjectID = "MjN-au-oBH"; */
+"MjN-au-oBH.text" = "バッテリー残量";
+
+/* Class = "UIButton"; normalTitle = "Dota Bata"; ObjectID = "RfV-QT-Owi"; */
+"RfV-QT-Owi.normalTitle" = "どたばた";
+
+/* Class = "UIButton"; normalTitle = "Yuru Yaka"; ObjectID = "aKh-aX-E2I"; */
+"aKh-aX-E2I.normalTitle" = "ゆるやか";
+
+/* Class = "UIButton"; normalTitle = "Chika Chika"; ObjectID = "hFJ-zH-nLC"; */
+"hFJ-zH-nLC.normalTitle" = "ちかちか";
+
+/* Class = "UILabel"; text = "Connection Status"; ObjectID = "iwE-sx-mwM"; */
+"iwE-sx-mwM.text" = "接続状況";
+
+/* Class = "UIButton"; normalTitle = "Bon Yari"; ObjectID = "m27-Xx-EkX"; */
+"m27-Xx-EkX.normalTitle" = "ぼんやり";
+
+/* Class = "UIButton"; normalTitle = "Tou Mei"; ObjectID = "ray-Tf-c52"; */
+"ray-Tf-c52.normalTitle" = "（なし）";
+
+/* Class = "UILabel"; text = "Variations"; ObjectID = "sV6-an-N6e"; */
+"sV6-an-N6e.text" = "プリセット";
+
+/* Class = "UIButton"; normalTitle = "Connect"; ObjectID = "tnP-g6-mgo"; */
+"tnP-g6-mgo.normalTitle" = "接続";

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FunikiIllumi/FunikiIllumiViewController.swift"
-            timestampString = "451390772.253782"
+            timestampString = "451844503.068559"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "bonyari()"
             landmarkType = "5">
          </BreakpointContent>

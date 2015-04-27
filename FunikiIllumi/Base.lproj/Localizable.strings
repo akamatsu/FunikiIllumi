@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  FunikiIllumi
+
+  Created by aka on 2015/04/28.
+  Copyright (c) 2015年 aka All rights reserved.
+*/
+
+"Choose Your Glasses" = "Choose Your Glasses";
+
+"Connected" = "Connected";
+"Not Connected" = "Not Connected";
+
+"Battery Level: " = "Battery Level: ";
+"Unknow" = "Unknow";
+"Low" = "Low";
+"Midium" = "Midium";
+"High" = "High";

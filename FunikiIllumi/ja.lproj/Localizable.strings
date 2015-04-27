@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  FunikiIllumi
+
+  Created by aka on 2015/04/28.
+  Copyright (c) 2015年 aka All rights reserved.
+*/
+
+"Choose Your Glasses" = "雰囲気メガネを選択";
+
+"Connected" = "接続済";
+"Not Connected" = "未接続";
+
+"Battery Level: " = "バッテリー残量：";
+"Unknow" = "不明";
+"Low" = "僅か";
+"Midium" = "少ない";
+"High" = "多い";
