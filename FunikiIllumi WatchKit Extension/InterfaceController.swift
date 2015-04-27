@@ -29,13 +29,13 @@ class InterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+		
+		selectedButton = toumeiButton
+		changeButtonColor(toumeiButton)
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
-		
-		selectedButton = toumeiButton
-		changeButtonColor(toumeiButton)
 		
         super.willActivate()
     }
