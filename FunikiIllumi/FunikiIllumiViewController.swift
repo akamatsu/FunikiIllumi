@@ -75,9 +75,6 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 		
 		self.canDisplayBannerAds = true
 		
-  		funikiManager.delegate = self
-		funikiManager.dataDelegate = self
-		
 		// Watchとの通信
 		wormhole = MMWormhole(applicationGroupIdentifier:appGroup, optionalDirectory:"FunikiIllumi")
 		// Watchからの受信
@@ -94,9 +91,11 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 	}
 	
     override func viewWillAppear(animated: Bool) {
-   
         super.viewWillAppear(animated)
-    }
+
+		funikiManager.delegate = self
+		funikiManager.dataDelegate = self
+   }
 	
 
 	// ---------------------------------------------------------------------
@@ -227,22 +226,22 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 			leftColor = UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1.0)
 			rightColor = leftColor
 			funikiManager.changeLeftColor(leftColor, rightColor: rightColor, duration: 1.0)
-			println("\(hue) \(saturation) \(brightness)")
+			//println("\(hue) \(saturation) \(brightness)")
 		}
 		
-		counter = (counter + 1) % 20
+		counter = (counter + 1) % 10
 	}
 	
 	func bonyari() {
 		if counter == 0 {
 			hue = CGFloat(arc4random_uniform(100)) * 0.01
 			saturation = CGFloat(arc4random_uniform(100)) * 0.01 * 0.5 + 0.25
-			brightness = CGFloat(arc4random_uniform(100)) * 0.01 * 0.1 + 0.05
+			brightness = 0.05
 			leftColor = UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1.0)
 			rightColor = leftColor
-			funikiManager.changeLeftColor(leftColor, rightColor: rightColor, duration: 0.5)
+			funikiManager.changeLeftColor(leftColor, rightColor: rightColor, duration: 2.0)
 		} else if (counter == 20) {
-			funikiManager.changeLeftColor(UIColor.blackColor(), rightColor: UIColor.blackColor(), duration: 0.5)
+			funikiManager.changeLeftColor(UIColor.blackColor(), rightColor: UIColor.blackColor(), duration: 2.0)
 			leftColor = nil
 			rightColor = nil
 		}
