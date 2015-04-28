@@ -11,6 +11,8 @@
 		4135E4BB1AEE8CC00026D958 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4135E4BD1AEE8CC00026D958 /* Localizable.strings */; };
 		4135E4C11AEE98580026D958 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4135E4C31AEE98580026D958 /* InfoPlist.strings */; };
 		4135E4C61AEE99B00026D958 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4135E4C51AEE99B00026D958 /* iAd.framework */; };
+		414FE4241AEF2E070083B09C /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 414FE4231AEF2E070083B09C /* MMWormhole.m */; };
+		414FE4251AEF2E070083B09C /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 414FE4231AEF2E070083B09C /* MMWormhole.m */; };
 		41F43C731AE7463600B3F400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C6E1AE7463600B3F400 /* AppDelegate.swift */; };
 		41F43C741AE7463600B3F400 /* FunikiDevicePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */; };
 		41F43C761AE7463600B3F400 /* FunikiIllumiMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */; };
@@ -67,6 +69,10 @@
 		4135E4C21AEE98580026D958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4135E4C41AEE985F0026D958 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4135E4C51AEE99B00026D958 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		414FE4221AEF2E070083B09C /* MMWormhole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWormhole.h; sourceTree = "<group>"; };
+		414FE4231AEF2E070083B09C /* MMWormhole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMWormhole.m; sourceTree = "<group>"; };
+		414FE4261AEF33E20083B09C /* FunikiIllumi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = FunikiIllumi.entitlements; path = FunikiIllumi/FunikiIllumi.entitlements; sourceTree = SOURCE_ROOT; };
+		414FE4271AEF33F70083B09C /* FunikiIllumi WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "FunikiIllumi WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		41F43C6D1AE745D200B3F400 /* FunikiIllumi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunikiIllumi-Bridging-Header.h"; sourceTree = "<group>"; };
 		41F43C6E1AE7463600B3F400 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FunikiIllumi/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiDevicePickerViewController.swift; path = FunikiIllumi/FunikiDevicePickerViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -115,9 +121,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		414FE4211AEF2E070083B09C /* MMWormhole */ = {
+			isa = PBXGroup;
+			children = (
+				414FE4221AEF2E070083B09C /* MMWormhole.h */,
+				414FE4231AEF2E070083B09C /* MMWormhole.m */,
+			);
+			path = MMWormhole;
+			sourceTree = "<group>";
+		};
 		41F6BCD91AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				414FE4271AEF33F70083B09C /* FunikiIllumi WatchKit Extension.entitlements */,
 				41F6BCDC1AE7A80A005D60B0 /* InterfaceController.swift */,
 				41F6BCDE1AE7A80A005D60B0 /* Images.xcassets */,
 				41F6BCDA1AE7A80A005D60B0 /* Supporting Files */,
@@ -154,12 +170,13 @@
 		8C79FDFC1A7DBEB80091F040 = {
 			isa = PBXGroup;
 			children = (
-				4135E4C51AEE99B00026D958 /* iAd.framework */,
 				8C79FE071A7DBEB80091F040 /* FunikiIllumi */,
 				41F6BCD91AE7A80A005D60B0 /* FunikiIllumi WatchKit Extension */,
 				41F6BCE61AE7A80A005D60B0 /* FunikiIllumi WatchKit App */,
 				41F43C6D1AE745D200B3F400 /* FunikiIllumi-Bridging-Header.h */,
 				8C79FE2D1A7DC0310091F040 /* FunikiSDK */,
+				414FE4211AEF2E070083B09C /* MMWormhole */,
+				4135E4C51AEE99B00026D958 /* iAd.framework */,
 				8C79FE061A7DBEB80091F040 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -177,6 +194,7 @@
 		8C79FE071A7DBEB80091F040 /* FunikiIllumi */ = {
 			isa = PBXGroup;
 			children = (
+				414FE4261AEF33E20083B09C /* FunikiIllumi.entitlements */,
 				41F43C6E1AE7463600B3F400 /* AppDelegate.swift */,
 				41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */,
 				41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */,
@@ -283,6 +301,11 @@
 					41F6BCD71AE7A80A005D60B0 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 2D3LDXJ36E;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					41F6BCE11AE7A80A005D60B0 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -290,6 +313,11 @@
 					8C79FE041A7DBEB80091F040 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 2D3LDXJ36E;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -351,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414FE4251AEF2E070083B09C /* MMWormhole.m in Sources */,
 				41F6BCDD1AE7A80A005D60B0 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +390,7 @@
 			files = (
 				41F43C761AE7463600B3F400 /* FunikiIllumiMotionViewController.swift in Sources */,
 				41F43C731AE7463600B3F400 /* AppDelegate.swift in Sources */,
+				414FE4241AEF2E070083B09C /* MMWormhole.m in Sources */,
 				8CA309A01A8C4AB0002A2DD3 /* Funiki.m in Sources */,
 				41F43C741AE7463600B3F400 /* FunikiDevicePickerViewController.swift in Sources */,
 				41F43C771AE7463600B3F400 /* FunikiIllumiViewController.swift in Sources */,
@@ -440,7 +470,7 @@
 				INFOPLIST_FILE = "FunikiIllumi WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f7f1f4a0-d29b-43d2-885a-309f395d9ae0";
+				PROVISIONING_PROFILE = "41a586f2-1b01-43c5-ac19-5b84488b332d";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -460,7 +490,7 @@
 				INFOPLIST_FILE = "FunikiIllumi WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f7f1f4a0-d29b-43d2-885a-309f395d9ae0";
+				PROVISIONING_PROFILE = "41a586f2-1b01-43c5-ac19-5b84488b332d";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -470,6 +500,7 @@
 		41F6BCF51AE7A80A005D60B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "FunikiIllumi WatchKit Extension/FunikiIllumi WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Masayuki Akamatsu (9FR9QEVWM5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Masayuki Akamatsu (9FR9QEVWM5)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -482,16 +513,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "f7f1f4a0-d29b-43d2-885a-309f395d9ae0";
+				PROVISIONING_PROFILE = "c2e89f37-577d-4f78-b94a-c7b98b9b2b46";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		41F6BCF61AE7A80A005D60B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
+				CODE_SIGN_ENTITLEMENTS = "FunikiIllumi WatchKit Extension/FunikiIllumi WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -499,8 +532,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "f7f1f4a0-d29b-43d2-885a-309f395d9ae0";
+				PROVISIONING_PROFILE = "c2e89f37-577d-4f78-b94a-c7b98b9b2b46";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -586,6 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FunikiIllumi/FunikiIllumi.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Masayuki Akamatsu (9FR9QEVWM5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Masayuki Akamatsu (9FR9QEVWM5)";
 				INFOPLIST_FILE = FunikiIllumi/Info.plist;
@@ -595,7 +630,7 @@
 					"$(PROJECT_DIR)/FunikiSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f7f1f4a0-d29b-43d2-885a-309f395d9ae0";
+				PROVISIONING_PROFILE = "c5a8b67a-3a8b-4afb-a3ad-40c3e5b2c2a4";
 				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -607,8 +642,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
+				CODE_SIGN_ENTITLEMENTS = FunikiIllumi/FunikiIllumi.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunikiIllumi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -616,7 +652,7 @@
 					"$(PROJECT_DIR)/FunikiSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f7f1f4a0-d29b-43d2-885a-309f395d9ae0";
+				PROVISIONING_PROFILE = "c5a8b67a-3a8b-4afb-a3ad-40c3e5b2c2a4";
 				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

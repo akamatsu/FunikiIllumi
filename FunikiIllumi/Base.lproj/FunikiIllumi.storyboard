@@ -34,7 +34,7 @@
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Variations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sV6-an-N6e">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sV6-an-N6e">
                                 <rect key="frame" x="16" y="115" width="568" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="6vR-jc-u3Y"/>
@@ -49,17 +49,17 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="(None)" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ray-Tf-c52">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Tou Mei" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ray-Tf-c52">
                                 <rect key="frame" x="16" y="137" width="568" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="nfu-Pq-hhB"/>
                                 </constraints>
-                                <state key="normal" title="(None)">
+                                <state key="normal" title="(Stop)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="variationSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Edr-0G-IQy"/>
+                                    <action selector="presetSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LhD-2w-Ai3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Yuru Yaka" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-aX-E2I">
@@ -72,7 +72,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="variationSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bSi-Pr-qx7"/>
+                                    <action selector="presetSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yox-XT-XwM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Bon Yari" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m27-Xx-EkX">
@@ -93,7 +93,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="variationSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bjs-4j-Smo"/>
+                                    <action selector="presetSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h7B-7p-6By"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Chika Chika" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFJ-zH-nLC">
@@ -114,7 +114,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="variationSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="84k-Hi-1JE"/>
+                                    <action selector="presetSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LDr-Lg-Ciq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Toki Doki" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43t-ur-NiZ">
@@ -135,7 +135,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="variationSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DjN-0U-im3"/>
+                                    <action selector="presetSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uEb-Ue-Gaz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Dota Bata" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfV-QT-Owi">
@@ -156,7 +156,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="variationSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nCT-0Q-JA7"/>
+                                    <action selector="presetSelected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="45D-Jy-aMz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnP-g6-mgo">
@@ -212,12 +212,12 @@
                         <outlet property="batteryLabel" destination="MjN-au-oBH" id="Jmm-dF-7f7"/>
                         <outlet property="connectionLabel" destination="iwE-sx-mwM" id="wZ1-5m-2f8"/>
                         <outlet property="defaultButton" destination="ray-Tf-c52" id="Ad9-IK-SoA"/>
-                        <outletCollection property="variations" destination="ray-Tf-c52" collectionClass="NSMutableArray" id="7u5-Mk-J84"/>
-                        <outletCollection property="variations" destination="aKh-aX-E2I" collectionClass="NSMutableArray" id="FMb-SB-AHy"/>
-                        <outletCollection property="variations" destination="m27-Xx-EkX" collectionClass="NSMutableArray" id="KBV-Fu-ypV"/>
-                        <outletCollection property="variations" destination="hFJ-zH-nLC" collectionClass="NSMutableArray" id="f2Y-Sr-8Do"/>
-                        <outletCollection property="variations" destination="RfV-QT-Owi" collectionClass="NSMutableArray" id="NtI-dL-4FW"/>
-                        <outletCollection property="variations" destination="43t-ur-NiZ" collectionClass="NSMutableArray" id="ney-di-jEV"/>
+                        <outletCollection property="presetButtonsGroup" destination="ray-Tf-c52" collectionClass="NSMutableArray" id="Scw-pk-uhr"/>
+                        <outletCollection property="presetButtonsGroup" destination="aKh-aX-E2I" collectionClass="NSMutableArray" id="aWo-e3-XhT"/>
+                        <outletCollection property="presetButtonsGroup" destination="m27-Xx-EkX" collectionClass="NSMutableArray" id="Y67-dY-CGq"/>
+                        <outletCollection property="presetButtonsGroup" destination="hFJ-zH-nLC" collectionClass="NSMutableArray" id="1r1-u7-aTu"/>
+                        <outletCollection property="presetButtonsGroup" destination="RfV-QT-Owi" collectionClass="NSMutableArray" id="eMC-xM-U29"/>
+                        <outletCollection property="presetButtonsGroup" destination="43t-ur-NiZ" collectionClass="NSMutableArray" id="i7f-ZP-p0g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

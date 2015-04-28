@@ -42,9 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
 		
-		if let userInfo = userInfo, buttonTitle = userInfo["buttonPushed"] as? String {
-			viewController?.buttonPushed(buttonTitle)
+		if let userInfo = userInfo, presetID = userInfo["buttonPushed"] as? String {
+			viewController?.buttonPushed(presetID)
 			//reply(["fromApp":"OK"])
+		}
+		if let userInfo = userInfo, dummy = userInfo["getPresetID"] as? String {
+			let presetID = viewController?.presetID
+			reply(["presetID": presetID!])
 		}
 	}
 }

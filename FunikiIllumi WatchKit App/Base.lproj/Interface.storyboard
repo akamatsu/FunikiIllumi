@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FunikiIllumi_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="(None)" id="9LY-se-2FH">
+                        <button width="1" alignment="left" title="(Stop)" id="9LY-se-2FH">
                             <connections>
                                 <action selector="toumeiPushed" destination="AgC-eL-Hgc" id="FX0-TT-aSq"/>
                             </connections>

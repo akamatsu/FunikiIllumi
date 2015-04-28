@@ -12,8 +12,17 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+	let appGroup = "group.org.akamatsu.FunikiIllumi"
+	var wormhole: MMWormhole!
+
+	let toumeiID = "Tou Mei"
+	let yuruyakaID = "Yuru Yaka"
+	let bonyariID = "Bon Yari"
+	let chikachikaID = "Chika Chika"
+	let dotabataID = "Dota Bata"
+	let tokidokiID = "Toki Doki"
+	
 	let selectedColor = UIColor(hue: 0.5861, saturation: 1.0, brightness: 1.0, alpha: 1.0)
-	//let unselectedColor = UIColor(hue: 0.0, saturation: 0.0, brightness: 1.0, alpha: 1.0)
 	let unselectedColor = UIColor(hue: 0.0, saturation: 0.0, brightness: 0.2, alpha: 1.0)
 
 	@IBOutlet weak var toumeiButton: WKInterfaceButton!
@@ -23,21 +32,32 @@ class InterfaceController: WKInterfaceController {
 	@IBOutlet weak var dotabataButton: WKInterfaceButton!
 	@IBOutlet weak var tokidokiButton: WKInterfaceButton!
 	
-	var selectedButton: WKInterfaceButton?
-	
 	override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-		
-		selectedButton = toumeiButton
 		changeButtonColor(toumeiButton)
-    }
 
+		// iOSとの通信
+		wormhole = MMWormhole(applicationGroupIdentifier:appGroup, optionalDirectory:"FunikiIllumi")
+		// iOSからの受信
+		self.wormhole.listenForMessageWithIdentifier("fromApp", listener: { (messageObject) -> Void in
+			if let presetID = messageObject.objectForKey("presetID") as? String {
+				self.changeButtonColorByID(presetID)
+			}
+		})
+	}
+	
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
 		
         super.willActivate()
+		WKInterfaceController.openParentApplication(["getPresetID": "getPresetID"],
+			reply: {replyInfo, error in
+				if let presetID = replyInfo["presetID"] as? String {
+					self.changeButtonColorByID(presetID)
+				}
+			})
     }
 
     override func didDeactivate() {
@@ -45,34 +65,51 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 	
+	func changeButtonColorByID(presetID: String) {
+		switch presetID {
+			case self.toumeiID:		self.changeButtonColor(self.toumeiButton)
+			case self.yuruyakaID:	self.changeButtonColor(self.yuruyakaButton)
+			case self.bonyariID:	self.changeButtonColor(self.bonyariButton)
+			case self.chikachikaID:	self.changeButtonColor(self.chikachikaButton)
+			case self.dotabataID:	self.changeButtonColor(self.dotabataButton)
+			case self.tokidokiID:	self.changeButtonColor(self.tokidokiButton)
+			default:				self.changeButtonColor(self.toumeiButton)
+		}
+	}
+	
 	func changeButtonColor(button: WKInterfaceButton) {
-		selectedButton?.setBackgroundColor(unselectedColor)
+		toumeiButton.setBackgroundColor(unselectedColor)
+		yuruyakaButton.setBackgroundColor(unselectedColor)
+		bonyariButton.setBackgroundColor(unselectedColor)
+		chikachikaButton.setBackgroundColor(unselectedColor)
+		dotabataButton.setBackgroundColor(unselectedColor)
+		tokidokiButton.setBackgroundColor(unselectedColor)
+
 		button.setBackgroundColor(selectedColor)
-		selectedButton = button
 	}
 
 	@IBAction func toumeiPushed() {
 		changeButtonColor(toumeiButton)
-		WKInterfaceController.openParentApplication(["buttonPushed": "Tou Mei"],reply: nil)
+		WKInterfaceController.openParentApplication(["buttonPushed": toumeiID],reply: nil)
 	}
 	@IBAction func yuruyakaPushed() {
 		changeButtonColor(yuruyakaButton)
-		WKInterfaceController.openParentApplication(["buttonPushed": "Yuru Yaka"],reply: nil)
+		WKInterfaceController.openParentApplication(["buttonPushed": yuruyakaID],reply: nil)
 	}
 	@IBAction func bonyariPushed() {
 		changeButtonColor(bonyariButton)
-		WKInterfaceController.openParentApplication(["buttonPushed": "Bon Yari"],reply: nil)
+		WKInterfaceController.openParentApplication(["buttonPushed": bonyariID],reply: nil)
 	}
 	@IBAction func chikachikaPushed() {
 		changeButtonColor(chikachikaButton)
-		WKInterfaceController.openParentApplication(["buttonPushed": "Chika Chika"],reply: nil)
+		WKInterfaceController.openParentApplication(["buttonPushed": chikachikaID],reply: nil)
 	}
 	@IBAction func dotabataPushed() {
 		changeButtonColor(dotabataButton)
-		WKInterfaceController.openParentApplication(["buttonPushed": "Dota Bata"],reply: nil)
+		WKInterfaceController.openParentApplication(["buttonPushed": dotabataID],reply: nil)
 	}
 	@IBAction func tokidokiPushed() {
 		changeButtonColor(tokidokiButton)
-		WKInterfaceController.openParentApplication(["buttonPushed": "Toki Doki"],reply: nil)
+		WKInterfaceController.openParentApplication(["buttonPushed": tokidokiID],reply: nil)
 	}
 }

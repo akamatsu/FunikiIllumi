@@ -7,8 +7,18 @@ import UIKit
 import iAd
 
 class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAFunikiManagerDataDelegate {
+	
+	let appGroup = "group.org.akamatsu.FunikiIllumi"
+	var wormhole: MMWormhole!
 
-    let funikiManager = MAFunikiManager.sharedInstance()
+	let toumeiID = "Tou Mei"
+	let yuruyakaID = "Yuru Yaka"
+	let bonyariID = "Bon Yari"
+	let chikachikaID = "Chika Chika"
+	let dotabataID = "Dota Bata"
+	let tokidokiID = "Toki Doki"
+
+	let funikiManager = MAFunikiManager.sharedInstance()
 	var illuminationTimer: NSTimer?
 	var rightColor : UIColor?
 	var leftColor : UIColor?
@@ -17,13 +27,13 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 	var brightness: CGFloat = 1.0
 	var counter = 0
 	var timerDuration = 0.25
-	var variationID = ""
+	var presetID = ""
 	let selectedColor = UIColor(hue: 0.5861, saturation: 1.0, brightness: 1.0, alpha: 1.0)
 	let unselectedColor = UIColor(hue: 0.0, saturation: 0.0, brightness: 1.0, alpha: 1.0)
 	
 	@IBOutlet var connectionLabel:UILabel!
     @IBOutlet var batteryLabel:UILabel!
-	@IBOutlet var variations: [UIButton]!
+	@IBOutlet var presetButtonsGroup: [UIButton]!
 	@IBOutlet var defaultButton: UIButton!
 	
     // MARK: -
@@ -68,8 +78,20 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
   		funikiManager.delegate = self
 		funikiManager.dataDelegate = self
 		
-		variationSelected(defaultButton)
-   }
+		// Watchとの通信
+		wormhole = MMWormhole(applicationGroupIdentifier:appGroup, optionalDirectory:"FunikiIllumi")
+		// Watchからの受信
+		self.wormhole.listenForMessageWithIdentifier("fromWatch", listener: { (messageObject) -> Void in
+			if let command = messageObject.objectForKey("command") as? String {
+				if command == "getPresetID" {
+					self.wormhole.passMessageObject(["presetID": self.presetID], identifier: "fromApp")
+				}
+			}
+		})
+		
+		// ボタンの初期状態
+		presetSelected(defaultButton)
+	}
 	
     override func viewWillAppear(animated: Bool) {
    
@@ -119,12 +141,12 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 	// MARK: - Actions
 	// ---------------------------------------------------------------------
 	
-	@IBAction func variationSelected(sender: UIButton) {
-		variationID = sender.restorationIdentifier!
+	@IBAction func presetSelected(sender: UIButton) {
+		presetID = sender.restorationIdentifier!
 		
-		for button:UIButton in variations {
+		for button:UIButton in presetButtonsGroup {
 			let id = button.restorationIdentifier!
-			if id == variationID {
+			if id == presetID {
 				button.backgroundColor = selectedColor
 				button.setTitleColor(unselectedColor, forState: UIControlState.Normal)
 			} else {
@@ -133,7 +155,7 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 			}
 		}
 		
-		if variationID == "(None)" {
+		if presetID == toumeiID {
 			toumei()
 			illuminationTimer?.invalidate()
 			illuminationTimer = nil
@@ -142,24 +164,19 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 				illuminationTimer = NSTimer.scheduledTimerWithTimeInterval(timerDuration, target: self, selector: "timerFired:", userInfo: nil, repeats: true)
 			}
 		}
+		
+		wormhole.passMessageObject(["presetID": presetID], identifier: "fromApp")
 	}
 	
 	func timerFired(timer:NSTimer) {
-		switch variationID {
-			case "(None)":
-				toumei()
-			case "Yuru Yaka":
-				yuruyaka()
-			case "Bon Yari":
-				bonyari()
-			case "Chika Chika":
-				chikachika()
-			case "Dota Bata":
-				dotabata()
-			case "Toki Doki":
-				tokidoki()
-			default:
-				toumei()
+		switch presetID {
+			case toumeiID:		toumei()
+			case yuruyakaID:	yuruyaka()
+			case bonyariID:		bonyari()
+			case chikachikaID:	chikachika()
+			case dotabataID:	dotabata()
+			case tokidokiID:	tokidoki()
+			default:			toumei()
 		}
 	}
 	
@@ -167,18 +184,18 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 	// MARK: - Watch
 	// ---------------------------------------------------------------------
 	
-	func buttonPushed(buttonTitle: String) {
-		for button:UIButton in variations {
-			let title = button.titleLabel!.text!
-			if title == buttonTitle {
-				variationSelected(button)
+	func buttonPushed(buttonID: String) {
+		for button:UIButton in presetButtonsGroup {
+			let id = button.restorationIdentifier
+			if id == buttonID {
+				presetSelected(button)
 			}
 		}
 	}
 
 	
 	// ---------------------------------------------------------------------
-	// MARK: - Light Variations
+	// MARK: - Light presets
 	// ---------------------------------------------------------------------
 	
 	func toumei() {
