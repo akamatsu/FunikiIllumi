@@ -470,7 +470,7 @@
 				INFOPLIST_FILE = "FunikiIllumi WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "41a586f2-1b01-43c5-ac19-5b84488b332d";
+				PROVISIONING_PROFILE = "f4303bd8-6958-4f7d-aa69-3eedf3e3f79f";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -490,7 +490,7 @@
 				INFOPLIST_FILE = "FunikiIllumi WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "41a586f2-1b01-43c5-ac19-5b84488b332d";
+				PROVISIONING_PROFILE = "f4303bd8-6958-4f7d-aa69-3eedf3e3f79f";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -513,7 +513,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "c2e89f37-577d-4f78-b94a-c7b98b9b2b46";
+				PROVISIONING_PROFILE = "b1789b5b-cf2e-4d63-91ba-587935c61d9b";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
 			};
@@ -523,8 +523,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "FunikiIllumi WatchKit Extension/FunikiIllumi WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -532,7 +532,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "c2e89f37-577d-4f78-b94a-c7b98b9b2b46";
+				PROVISIONING_PROFILE = "b1789b5b-cf2e-4d63-91ba-587935c61d9b";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
 			};
@@ -630,7 +630,7 @@
 					"$(PROJECT_DIR)/FunikiSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c5a8b67a-3a8b-4afb-a3ad-40c3e5b2c2a4";
+				PROVISIONING_PROFILE = "39901746-da72-41f8-845c-a1e7677fe919";
 				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -643,8 +643,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FunikiIllumi/FunikiIllumi.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Masayuki Akamatsu (2D3LDXJ36E)";
 				INFOPLIST_FILE = FunikiIllumi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -652,7 +652,7 @@
 					"$(PROJECT_DIR)/FunikiSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c5a8b67a-3a8b-4afb-a3ad-40c3e5b2c2a4";
+				PROVISIONING_PROFILE = "39901746-da72-41f8-845c-a1e7677fe919";
 				SWIFT_OBJC_BRIDGING_HEADER = "FunikiIllumi-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

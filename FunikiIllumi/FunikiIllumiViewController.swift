@@ -8,6 +8,8 @@ import iAd
 
 class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAFunikiManagerDataDelegate {
 	
+	let demo = false	// スクリーン・キャプチャを取る場合は、これをtrueにする
+	
 	let appGroup = "group.org.akamatsu.FunikiIllumi"
 	var wormhole: MMWormhole!
 
@@ -43,7 +45,11 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
         }else {
             self.connectionLabel.text = NSLocalizedString("Not Connected", comment: "")
         }
-    }
+		
+		if demo {
+			self.connectionLabel.text = NSLocalizedString("Connected", comment: "")
+		}
+	}
     
     func updateBatteryLevel(){
 		let batteryLevelString = NSLocalizedString("Battery Level: ", comment: "")
@@ -63,6 +69,10 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
         default:
             self.batteryLabel.text = batteryLevelString + NSLocalizedString("Unknow", comment: "")
         }
+		
+		if demo {
+			self.batteryLabel.text = batteryLevelString + NSLocalizedString("High", comment: "")
+		}
     }
 
 	
@@ -73,7 +83,9 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-		self.canDisplayBannerAds = true
+		if demo == false {
+			self.canDisplayBannerAds = true
+		}
 		
 		// Watchとの通信
 		wormhole = MMWormhole(applicationGroupIdentifier:appGroup, optionalDirectory:"FunikiIllumi")
