@@ -15,7 +15,6 @@
 		414FE4251AEF2E070083B09C /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 414FE4231AEF2E070083B09C /* MMWormhole.m */; };
 		41F43C731AE7463600B3F400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C6E1AE7463600B3F400 /* AppDelegate.swift */; };
 		41F43C741AE7463600B3F400 /* FunikiDevicePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */; };
-		41F43C761AE7463600B3F400 /* FunikiIllumiMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */; };
 		41F43C771AE7463600B3F400 /* FunikiIllumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */; };
 		41F43C791AE7464600B3F400 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F43C781AE7464600B3F400 /* Images.xcassets */; };
 		41F6BCDD1AE7A80A005D60B0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F6BCDC1AE7A80A005D60B0 /* InterfaceController.swift */; };
@@ -76,7 +75,6 @@
 		41F43C6D1AE745D200B3F400 /* FunikiIllumi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunikiIllumi-Bridging-Header.h"; sourceTree = "<group>"; };
 		41F43C6E1AE7463600B3F400 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FunikiIllumi/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiDevicePickerViewController.swift; path = FunikiIllumi/FunikiDevicePickerViewController.swift; sourceTree = SOURCE_ROOT; };
-		41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiIllumiMotionViewController.swift; path = FunikiIllumi/FunikiIllumiMotionViewController.swift; sourceTree = SOURCE_ROOT; };
 		41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunikiIllumiViewController.swift; path = FunikiIllumi/FunikiIllumiViewController.swift; sourceTree = SOURCE_ROOT; };
 		41F43C781AE7464600B3F400 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FunikiIllumi/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		41F43C931AE7465800B3F400 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FunikiIllumi/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -198,7 +196,6 @@
 				41F43C6E1AE7463600B3F400 /* AppDelegate.swift */,
 				41F43C6F1AE7463600B3F400 /* FunikiDevicePickerViewController.swift */,
 				41F43C721AE7463600B3F400 /* FunikiIllumiViewController.swift */,
-				41F43C711AE7463600B3F400 /* FunikiIllumiMotionViewController.swift */,
 				4135E4AE1AEE887A0026D958 /* FunikiIllumi.storyboard */,
 				4135E4BD1AEE8CC00026D958 /* Localizable.strings */,
 				41F43C781AE7464600B3F400 /* Images.xcassets */,
@@ -388,7 +385,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F43C761AE7463600B3F400 /* FunikiIllumiMotionViewController.swift in Sources */,
 				41F43C731AE7463600B3F400 /* AppDelegate.swift in Sources */,
 				414FE4241AEF2E070083B09C /* MMWormhole.m in Sources */,
 				8CA309A01A8C4AB0002A2DD3 /* Funiki.m in Sources */,

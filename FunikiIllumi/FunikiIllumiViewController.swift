@@ -1,6 +1,8 @@
 //
 //  Created by Matilde Inc.
 //  Copyright (c) 2015 FUN'IKI Project. All rights reserved.
+//  Modified by Masayuki Akamatsu
+//  Copyright (c) 2015 Masayuki Akamatsu. All rights reserved.
 //
 
 import UIKit
@@ -38,8 +40,11 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 	@IBOutlet var presetButtonsGroup: [UIButton]!
 	@IBOutlet var defaultButton: UIButton!
 	
-    // MARK: -
-    func updateConnectionStatus() {
+	// ---------------------------------------------------------------------
+	// MARK: - FUN'IKI Update
+	// ---------------------------------------------------------------------
+
+	func updateConnectionStatus() {
         if funikiManager.connected {
             self.connectionLabel.text = NSLocalizedString("Connected", comment: "")
         }else {
@@ -111,7 +116,7 @@ class FunikiIllumiViewController: UIViewController, MAFunikiManagerDelegate, MAF
 	
 
 	// ---------------------------------------------------------------------
-	// MARK: - Funiki Delegates
+	// MARK: - FUN'IKI Delegates
 	// ---------------------------------------------------------------------
 
 	func funikiManagerDidConnect(manager: MAFunikiManager!) {

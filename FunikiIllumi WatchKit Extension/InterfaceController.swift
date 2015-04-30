@@ -3,12 +3,11 @@
 //  FunikiIllumi WatchKit Extension
 //
 //  Created by aka on 2015/04/22.
-//  Copyright (c) 2015年 Matilde Inc. All rights reserved.
+//  Copyright (c) 2015 Masayuki Akamatsu. All rights reserved.
 //
 
 import WatchKit
 import Foundation
-
 
 class InterfaceController: WKInterfaceController {
 
